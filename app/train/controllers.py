@@ -14,11 +14,11 @@ train = Blueprint('train_blueprint', __name__,
 @train.route('/<storyId>', methods=['GET'])
 def home(storyId):
     story = Story.objects.get(id=ObjectId(storyId))
-    labeledSentences = story.labeledSentences
+    labeled_sentences = story.labeledSentences
     return render_template(
         'train.html',
-        storyId=storyId,
-        labeledSentences=labeledSentences,
+        story_id=storyId,
+        labeled_sentences=labeled_sentences,
         story=story.to_mongo().to_dict(),
         parameters=[
             parameter.name for parameter in story.parameters])

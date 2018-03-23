@@ -11,7 +11,7 @@
     <div class="page-header">
         <div class="pull-left">
             <h1>Iky's Class Room</h1>
-            <i>Train your story for possible user inputs.<br>Tag required parameters using mouse and give em labels</i>
+            <i>Train your story for possible user inputs.<br>Tag required parameters using mouse and give them labels</i>
         </div>
         <div class="pull-right">
             <a href="/"><img class="logo-left" src="/static/images/iky.png"></a>
@@ -19,7 +19,7 @@
         <div class="clearfix"></div>
     </div>
     <div class="span4 train-area">
-        <input type="hidden" name="storyId" value="{{ storyId }}" required>
+        <input type="hidden" name="storyId" value="{{ story_id }}" required>
         <div class="form-control" id="sentences" placeholder="Enter sample user input" contenteditable="true"></div>
         <br>
         <div class="pull-right">
@@ -45,7 +45,7 @@
     </div>
     <div class="span4">
         <div class="pull-right">
-            <button type="button" class="btn btn-primary" id="btnBuild" objid="{{ storyId }}">Build Model</button>
+            <button type="button" class="btn btn-primary" id="btnBuild" objid="{{ story_id }}">Build Model</button>
             <button type="button" class="btn btn-primary" id="btnInsertLabeledSentence">Add to Test Set</button>
         </div>
     </div>
@@ -56,7 +56,7 @@
     <p class="flip">View labeled sentences<span class="glyphicon glyphicon-menu-down"></span></p>
     <div class="row new_story panel" id="work">
         <ol>
-            {% for entry in labeledSentences %}
+            {% for entry in labeled_sentences %}
             <li _id="{{ entry.id}}">{{ entry.data }} <a id="btnDeleteSentence" _id="{{ entry.id}}"> Delete</a></li>
             {% endfor %}
         </ol>
