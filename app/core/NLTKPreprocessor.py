@@ -1,6 +1,6 @@
 import string
 
-from nltk.corpus import stopwords as sw
+# from nltk.corpus import stopwords as sw
 from nltk.corpus import wordnet as wn
 from nltk import wordpunct_tokenize
 from nltk import WordNetLemmatizer
