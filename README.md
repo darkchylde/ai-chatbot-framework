@@ -95,18 +95,20 @@ Watch tutorial on [Fullfilling your Chatbot Intent with an API Call - Recipe Sea
 
 Please visit my [website](http://alfredfrancis.github.io) to see my personal chatbot in action
 
-### Dependencies documentations
+### Todos
+ *  Write Unit Tests
+ *  PEP-8 compliance
+ *  Migrate UI to Angular 5
+ *  Word2Vec Integration
+ *  NLTK to Spacy migration
+ *  PyCRFSuite to sklearn-crfsuite migration
+ *  Support follow up conversations
+ 
+ ### Dependencies documentations
 * [NLTK documentation](www.nltk.org/)
 * [SKLearn documentation](http://scikit-learn.org/)
 * [CRFsuite documentation](http://www.chokkan.org/software/crfsuite/)
 * [python CRfSuite](https://python-crfsuite.readthedocs.io/en/latest/)
-
-
-### Todos
- *  Write Unit Tests
- *  Improve intent classification accuracy
- *  Add parameter types
- *  Migrate UI to React JS
 
 **Free Software, Hell Yeah!**
 <hr></hr>
