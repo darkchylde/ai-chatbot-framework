@@ -16,7 +16,7 @@ class NLTKPreprocessor(BaseEstimator, TransformerMixin):
                  lower=True, strip=True):
         self.lower = lower
         self.strip = strip
-        #self.stopwords  = stopwords or set(sw.words('english'))
+        # self.stopwords  = stopwords or set(sw.words('english'))
         self.punct = punct or set(string.punctuation)
         self.lemmatizer = WordNetLemmatizer()
 
